@@ -1,0 +1,6 @@
+
+
+   entity "Entity_1" { 
+	   "Element_1":  ; }
+	technical configuration {
+	    column  store; };
