@@ -1,9 +1,9 @@
-
-
-   entity "Entity_111" { 
-	   "Element_1":  ;
-	   "Element_2":  ;
-	   "Element_3":  ;
-	   "Element_4":  ; }
-	technical configuration {
-	    column  store; };
+entity "Entity_111" {
+   "Element_1" : Integer;
+   "Element_2" : DecimalFloat;
+   "Element_3" : Boolean;
+   "Element_4" : BinaryFloat;
+}
+technical configuration {
+   column store;
+};

@@ -32,9 +32,8 @@ using DataWarehouse.DataStore :: Annotations as DataStore;
 context "Data_Store_1" {
    @DataStore.entityCategory : #ACTIVE_DATA
    entity active_data {
-      "Element_1" : not null;
-      "Element_2" : not null;
-      "Element_3" : not null;
+      "Element_1" : Integer default 0 not null;
+      "Element_2" : Boolean default 0 not null;
    }
    technical configuration {
       column store;
@@ -46,22 +45,18 @@ context "Data_Store_1" {
       technicalAttributes : inboundQueueAttributes not null;
 
       @DataStore.aggregation : #MOV
-      "Element_1"         : not null;
+      "Element_1"         : Integer default 0 not null;
 
       @DataStore.aggregation : #MOV
-      "Element_2"         : not null;
-
-      @DataStore.aggregation : #MOV
-      "Element_3"         : not null;
+      "Element_2"         : Boolean default 0 not null;
    };
 
    @DataStore.entityCategory : #CHANGE_LOG
    entity change_log {
       key technicalKey    : changeLogKey;
       technicalAttributes : changeLogAttributes not null;
-      "Element_1"         : not null;
-      "Element_2"         : not null;
-      "Element_3"         : not null;
+      "Element_1"         : Integer default 0 not null;
+      "Element_2"         : Boolean default 0 not null;
    };
 
    @DataStore.entityCategory : #OPERATION_HISTORY
