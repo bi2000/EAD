@@ -1,6 +1,8 @@
-
-
-   entity "Entity_1" { 
-	   "Element_1": Integer ; }
-	technical configuration {
-	    column  store; };
+entity "Entity_1" {
+   "Element_1" : Integer;
+   "Element_2" : LargeBinary;
+   "Element_3" : Boolean;
+}
+technical configuration {
+   column store;
+};

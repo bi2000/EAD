@@ -1,6 +1,8 @@
-
-
-   entity "Entity_2" { 
-	   "Element_1": Integer ; }
-	technical configuration {
-	    column  store; };
+entity "Entity_2" {
+   "Element_1" : BinaryFloat;
+   "Element_2" : Integer64;
+   "Element_3" : LocalDate;
+}
+technical configuration {
+   column store;
+};
