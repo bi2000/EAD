@@ -34,6 +34,7 @@ context "Data_Store_1" {
    entity active_data {
       "Element_1" : not null;
       "Element_2" : not null;
+      "Element_3" : not null;
    }
    technical configuration {
       column store;
@@ -49,6 +50,9 @@ context "Data_Store_1" {
 
       @DataStore.aggregation : #MOV
       "Element_2"         : not null;
+
+      @DataStore.aggregation : #MOV
+      "Element_3"         : not null;
    };
 
    @DataStore.entityCategory : #CHANGE_LOG
@@ -57,6 +61,7 @@ context "Data_Store_1" {
       technicalAttributes : changeLogAttributes not null;
       "Element_1"         : not null;
       "Element_2"         : not null;
+      "Element_3"         : not null;
    };
 
    @DataStore.entityCategory : #OPERATION_HISTORY
