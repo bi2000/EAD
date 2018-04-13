@@ -1,6 +1,6 @@
 
 
    entity "Entity_2" { 
-	   "Element_1":  ; }
+	   "Element_1": Integer ; }
 	technical configuration {
 	    column  store; };
